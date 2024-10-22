@@ -20,8 +20,9 @@
             background-size: 400% 400%;
             animation: animateBG 15s ease infinite;
             color: #333;
-            position: relative;
-            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         .container {
@@ -32,7 +33,6 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             animation: fadeIn 1s ease-in-out;
-            position: relative;
             z-index: 2;
         }
 
@@ -99,6 +99,7 @@
         .register-link a:hover {
             background: #5345a0;
         }
+
         .register-link a:hover {
             transform: scale(1.05);
             transition: transform 0.3s ease-in-out;
@@ -124,6 +125,16 @@
             z-index: 0;
             opacity: 0.5;
         }
+
+        footer {
+            margin-top: auto;
+            text-align: center;
+            background-color: #f1f1f1; /* You can change the background color if you want */
+            padding: 10px 0;
+            font-weight: bold;
+            font-size: 14px; /* Adjust the font size as needed */
+        }
+
     </style>
 </head>
 <body>
@@ -131,7 +142,7 @@
     <div class="container">
         <h1>Dynamech 2024 Registration</h1>
         <p>
-           <b> Follow the steps below to complete your Payment  and Registration :</b>
+           <b> Follow the steps below to complete your Payment and Registration:</b>
         </p>
         <p>
             <strong>Step 1:</strong> Scan QR code and PAY Registration Fee.
@@ -162,12 +173,10 @@
         <div class="register-link">
             <a href="https://forms.gle/dtJHZuF2QmQ8bphC6" target="_blank">Project Expo Registration Form</a>
         </div>
-    
         <p>
-            If you encounter any issues during the registration or payment process, please contact our support team at contact : +91 8019776089
+            If you encounter any issues during the registration or payment process, please contact our support team at contact: +91 8019776089
         </p>  
     </div>
-    <footer><br> <b> <br>Developed by K JAYANTH 21001A0363</b> </footer>
-   
+    <footer><br> <b>Developed by K JAYANTH 21001A0363</b> </footer>
 </body>
 </html>
